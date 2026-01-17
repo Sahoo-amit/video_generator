@@ -19,7 +19,9 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <UserDetailsContext.Provider value={{ userDetail, setUserdetail }}>
-        {children}
+        <div className='max-w-7xl mx-auto'>
+          {children}
+        </div>
       </UserDetailsContext.Provider>
     </div>
   )
